@@ -38,10 +38,8 @@
             object-fit: cover;
         }
 
-        #topbar {
+        .bar {
             position: fixed;
-            top: 0;
-            left: 0;
             width: 100%;
             background-color: #333;
             color: #fff;
@@ -50,9 +48,17 @@
             text-align: center;
         }
 
-        #topbar h1 {
+        .bar h1 {
             margin: 0;
             font-size: 18px;
+        }
+
+        #topbar {
+            top: 0;
+        }
+
+        #bottombar {
+            bottom: 0;
         }
 
         #content {
@@ -65,12 +71,8 @@
 </head>
 <body>
 
-<div id="topbar">
-    <h1>Xin chào Chua Chua :></h1>
-</div>
-
-<div class="container">
-    <h2>Vui lòng đưa ra một chọn lựa dưới đây!</h2>
+<div id="topbar" class="bar">
+    <h1>Chua Chua xả stress space :></h1>
 </div>
 
 <div class="container">
@@ -86,6 +88,10 @@
     <a href="music.html" class="box">
         <img src="background/image4.png" alt="Music">
     </a>
+</div>
+
+<div id="bottombar" class="bar">
+    <h1>Another Bar at the Bottom</h1>
 </div>
 
 </body>
